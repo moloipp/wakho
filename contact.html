@@ -1,46 +1,172 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-ZA">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wakho Global | Contact</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wakho Global | Contact</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<header>
-  <div class="container navwrap">
-    <a class="brand" href="index.html">
-      <img src="logo.jpeg" alt="Logo">
-      <div>
-        <b>Wakho Global</b>
-        <span>General Trading & Projects</span>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="container">
+      <div class="navwrap">
+        <a class="brand" href="index.html" aria-label="Wakho Global home">
+          <img src="logo.jpeg" alt="Wakho Global logo" loading="eager" />
+          <div>
+            <b>Wakho Global</b>
+            <span>General Trading &amp; Projects</span>
+          </div>
+        </a>
+        <nav aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn small primary" href="contact.html">Request a Quote</a>
+        </nav>
       </div>
-    </a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+    </div>
+  </header>
 
-
-<section class="section">
+  <main id="main">
+    
+<section class="pagehead">
   <div class="container">
-    <h2>Contact Us</h2>
-    <p style="text-align:center; color:#64748b;">
-    Email: info@wakhoglobal.com<br>
-    Location: Hammarsdale, South Africa
-    </p>
+    <div class="kicker">CONTACT</div>
+    <h1>Contact Us</h1>
+    <p class="lead">Send an enquiry and we’ll get back to you. You can also email us directly.</p>
   </div>
 </section>
 
+<section>
+  <div class="container grid2">
+    <div class="card">
+      <div class="cardBody">
+        <h2>Request a Quote</h2>
+        <form id="quoteForm" onsubmit="return handleSubmit(event)">
+          <div class="formRow">
+            <div>
+              <label for="name">Full Name</label>
+              <input id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@email.com" required />
+            </div>
+          </div>
 
-<footer>
-© 2026 Wakho Global. All rights reserved.
-</footer>
+          <div class="formRow">
+            <div>
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" placeholder="e.g. 07X XXX XXXX" />
+            </div>
+            <div>
+              <label for="service">Service</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option>IT Equipment Supply</option>
+                <option>Cleaning Services</option>
+                <option>Security Services</option>
+                <option>Other / Custom Request</option>
+              </select>
+            </div>
+          </div>
 
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what you need (scope, location, timeframe, quantity)..." required></textarea>
+          </div>
+
+          <button class="btn primary" type="submit">Send Enquiry</button>
+          <p class="hint" id="formHint" style="margin:0">Demo only: connect this form to email/backend for production.</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="cardBody">
+        <h2>Details</h2>
+        <p style="color:var(--muted); margin-top:0">
+          <b>Email:</b> <a href="mailto:info@wakhoglobal.com">info@wakhoglobal.com</a><br />
+          <b>Address:</b> Mthoko Mkhize Drive, Hammarsdale, 3699
+        </p>
+
+        <div style="height:10px"></div>
+
+        <div class="band" style="padding:14px">
+          <p style="margin:0; color:var(--muted); font-size:13px">
+            <b>Phone / WhatsApp:</b> Add your number here when ready.<br />
+            <span class="hint">Tip: WhatsApp link format: https://wa.me/27XXXXXXXXX</span>
+          </p>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <iframe class="map"
+          title="Map - Hammarsdale"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Hammarsdale%203699&output=embed"></iframe>
+
+        <div style="height:14px"></div>
+
+        <div class="ctaRow">
+          <a class="btn secondary" href="mailto:info@wakhoglobal.com">Email</a>
+          <a class="btn primary" href="services.html">View Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footGrid">
+        <div>
+          <h4>Wakho Global</h4>
+          <p class="hint" style="margin:0">General Trading &amp; Projects — IT equipment supply, cleaning services, and security solutions across South Africa.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <p style="margin:0">
+            <a href="services.html#it">IT Equipment Supply</a><br />
+            <a href="services.html#cleaning">Cleaning Services</a><br />
+            <a href="services.html#security">Security Services</a>
+          </p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p style="margin:0">
+            <a href="mailto:info@wakhoglobal.com">info@wakhoglobal.com</a><br />
+            Mthoko Mkhize Drive, Hammarsdale, 3699
+          </p>
+        </div>
+      </div>
+      <div class="copy">© <span id="year"></span> Wakho Global. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function prefillService(serviceName){
+      const el = document.getElementById("service");
+      if(!el) return;
+      el.value = serviceName;
+      document.getElementById("message")?.focus();
+    }
+    function handleSubmit(e){
+      e.preventDefault();
+      const hint = document.getElementById("formHint");
+      if (hint) {
+        hint.textContent = "Thanks! Your enquiry is ready to be sent. Connect this form to email/backend for production.";
+        hint.style.color = "var(--brand2)";
+      }
+      e.target.reset();
+      return false;
+    }
+  </script>
 </body>
 </html>

@@ -1,56 +1,160 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-ZA">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wakho Global | Services</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wakho Global | Services</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<header>
-  <div class="container navwrap">
-    <a class="brand" href="index.html">
-      <img src="logo.jpeg" alt="Logo">
-      <div>
-        <b>Wakho Global</b>
-        <span>General Trading & Projects</span>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="container">
+      <div class="navwrap">
+        <a class="brand" href="index.html" aria-label="Wakho Global home">
+          <img src="logo.jpeg" alt="Wakho Global logo" loading="eager" />
+          <div>
+            <b>Wakho Global</b>
+            <span>General Trading &amp; Projects</span>
+          </div>
+        </a>
+        <nav aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn small primary" href="contact.html">Request a Quote</a>
+        </nav>
       </div>
-    </a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+    </div>
+  </header>
 
-
-<section class="section">
+  <main id="main">
+    
+<section class="pagehead">
   <div class="container">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>IT Equipment Supply</h3>
-        <p>Full procurement, delivery, installation, and maintenance of IT equipment.</p>
+    <div class="kicker">SERVICES</div>
+    <h1>Our Services</h1>
+    <p class="lead">Choose a service below and request a quote. We tailor every solution to your needs and budget.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container grid3">
+    <article class="card" id="it">
+      <div class="cardMedia">
+        <span class="tag">IT Supply</span>
+        <img src="https://images.unsplash.com/photo-1526406915894-7bcd65f60845?auto=format&fit=crop&fm=jpg&q=60&w=2400" alt="IT equipment and devices" loading="lazy" />
       </div>
-      <div class="card">
-        <h3>Cleaning Services</h3>
-        <p>Professional cleaning services tailored to corporate and residential needs.</p>
+      <div class="cardBody">
+        <h2 style="font-size:22px">IT Equipment Supply</h2>
+        <p>Supply of laptops, desktops, networking equipment, printers &amp; consumables, including installation and support.</p>
+        <div class="meta">
+          <span class="pill">Sourcing</span><span class="pill">Delivery</span><span class="pill">Installation</span><span class="pill">Support</span>
+        </div>
+        <div style="height:14px"></div>
+        <a class="btn primary" href="contact.html" onclick="prefillService('IT Equipment Supply')">Request IT Quote</a>
       </div>
-      <div class="card">
-        <h3>Security Services</h3>
-        <p>Trained security personnel and technology-based protection systems.</p>
+    </article>
+
+    <article class="card" id="cleaning">
+      <div class="cardMedia">
+        <span class="tag">Cleaning</span>
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&fm=jpg&q=60&w=2400" alt="Professional cleaning in progress" loading="lazy" />
+      </div>
+      <div class="cardBody">
+        <h2 style="font-size:22px">Cleaning Services</h2>
+        <p>Commercial, office, residential, and post‑construction cleaning with consistent standards and supervision.</p>
+        <div class="meta">
+          <span class="pill">Commercial</span><span class="pill">Office</span><span class="pill">Residential</span><span class="pill">Post‑construction</span>
+        </div>
+        <div style="height:14px"></div>
+        <a class="btn primary" href="contact.html" onclick="prefillService('Cleaning Services')">Book Cleaning</a>
+      </div>
+    </article>
+
+    <article class="card" id="security">
+      <div class="cardMedia">
+        <span class="tag">Security</span>
+        <img src="https://images.unsplash.com/photo-1520975682031-aadf04f8f6f3?auto=format&fit=crop&fm=jpg&q=60&w=2400" alt="Security services at a building entrance" loading="lazy" />
+      </div>
+      <div class="cardBody">
+        <h2 style="font-size:22px">Security Services</h2>
+        <p>Guarding, event security, CCTV installation, and access control systems for improved safety and oversight.</p>
+        <div class="meta">
+          <span class="pill">Guarding</span><span class="pill">Events</span><span class="pill">CCTV</span><span class="pill">Access Control</span>
+        </div>
+        <div style="height:14px"></div>
+        <a class="btn primary" href="contact.html" onclick="prefillService('Security Services')">Request Assessment</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="band">
+      <div class="grid2" style="gap:18px">
+        <div>
+          <h2 style="margin:0 0 8px">Need a tailored solution?</h2>
+          <p style="margin:0; color:var(--muted)">Tell us your scope, location and timeframe. We’ll respond with a quote.</p>
+        </div>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:flex-end">
+          <a class="btn primary" href="contact.html">Request a Quote</a>
+          <a class="btn secondary" href="mailto:info@wakhoglobal.com">Email Us</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+  </main>
 
-<footer>
-© 2026 Wakho Global. All rights reserved.
-</footer>
+  <footer>
+    <div class="container">
+      <div class="footGrid">
+        <div>
+          <h4>Wakho Global</h4>
+          <p class="hint" style="margin:0">General Trading &amp; Projects — IT equipment supply, cleaning services, and security solutions across South Africa.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <p style="margin:0">
+            <a href="services.html#it">IT Equipment Supply</a><br />
+            <a href="services.html#cleaning">Cleaning Services</a><br />
+            <a href="services.html#security">Security Services</a>
+          </p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p style="margin:0">
+            <a href="mailto:info@wakhoglobal.com">info@wakhoglobal.com</a><br />
+            Mthoko Mkhize Drive, Hammarsdale, 3699
+          </p>
+        </div>
+      </div>
+      <div class="copy">© <span id="year"></span> Wakho Global. All rights reserved.</div>
+    </div>
+  </footer>
 
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function prefillService(serviceName){
+      const el = document.getElementById("service");
+      if(!el) return;
+      el.value = serviceName;
+      document.getElementById("message")?.focus();
+    }
+    function handleSubmit(e){
+      e.preventDefault();
+      const hint = document.getElementById("formHint");
+      if (hint) {
+        hint.textContent = "Thanks! Your enquiry is ready to be sent. Connect this form to email/backend for production.";
+        hint.style.color = "var(--brand2)";
+      }
+      e.target.reset();
+      return false;
+    }
+  </script>
 </body>
 </html>
